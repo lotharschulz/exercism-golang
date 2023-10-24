@@ -23,6 +23,7 @@ func IsNumber(n int) bool {
 
 }
 
+// returns the digits with a given integer
 func getDigits(n int) []int{
     digits := []int{}
     for n !=0 {
@@ -33,12 +34,14 @@ func getDigits(n int) []int{
     return digits
 }
 
+// reverses a given int array
 func reverseInt(s []int) {
     for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
             s[i], s[j] = s[j], s[i]
     }
 }
 
+// returns the number of digits/integers of an int array
 func getNumberOfDigits(digits []int) int{
 	return len(digits)
 }
